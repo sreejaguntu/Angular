@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+
+    <script>
+        function time(){
+            document.getElementById("timer").innerHTML="00"+hour+":"+mins+":"+sec
+
+            if (sec>59){
+                sec=0
+                min+=1
+            }
+            if (min>59){
+                min=0
+                hour+=1
+            }
+
+
+            
+        }
+    </script>
+</head>
+<body onload="timer()">
+    <div class="cont">
+        <span class="hours">Hours</span>
+        <span class="mins">Minutes</span>
+        <span class="secs">Seconds</span>
+    </div>
+
+    <div id="timer">
+
+    </div>
+    
+    
+</body>
+</html>

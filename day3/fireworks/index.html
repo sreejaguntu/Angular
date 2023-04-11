@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fireworks</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function timer(){
+        var sec = 30;
+        
+        document.getElementById("image").style.display="none";
+        
+        var timer = setInterval(function(){
+            document.getElementById("heading").innerHTML="COUNTDOWN"
+            document.getElementById("timer").innerHTML='00:'+sec;
+            sec--;
+            if (sec<10){
+                document.getElementById("timer").innerHTML="00:"+"0"+sec;
+            }
+            if (sec < 1) {
+                clearInterval(timer);
+                document.getElementById("heading").innerHTML="Hi..."                
+                document.getElementById("timer").style.display="none";
+                document.getElementById("image").style.display="block";
+                
+            }
+
+        }, 1000);
+        }
+
+
+    </script>
+</head>
+<body onload="timer()">
+    
+    <div class="head" id="heading"></div>
+    <div class="timer" id="timer"></div>
+    <div class="image" id="image">
+        <img src="1.webp" >
+    </div>
+
+
+
+    
+</body>
+</html>

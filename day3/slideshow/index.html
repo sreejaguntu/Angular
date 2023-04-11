@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow</title>
+
+    <link rel="stylesheet" href="slide.css">
+    <script src="https://kit.fontawesome.com/db10a85bbc.js"></script>
+
+    <script>
+
+        function slideshow(){
+   
+        slides=["b1.jpg","b2.jpg","c1.jpg"]
+        slides1=["c11.jpg","c22.jpg","c33.jpg"]
+        sli1=["p1.jpg","p2.jpg","c2.jpg"]
+        s1=["p1.jpg","p2.jpg","c2.jpg"]
+        s2=["c11.jpg","c22.jpg","c33.jpg"]
+        s3=["b1.jpg","b2.jpg","c1.jpg"]
+        
+        x=0
+        setInterval(function (){
+            document.getElementById("slide").src=slides[x]
+            x++
+            if(x == slides.length){
+                x=0
+            }
+        },1000)
+
+        setInterval(function(){
+            document.getElementById("slid").src=slides1[x]
+            x++
+            if(x == slides.length){
+                x=0
+            }
+        },2000)
+
+        setInterval(function(){
+            document.getElementById("sli").src=sli1[x]
+            x++
+            if(x == slides.length){
+                x=0
+            }
+        },3000)
+
+        setInterval(function(){
+            document.getElementById("s1").src=sli1[x]
+            x++
+            if(x == slides.length){
+                x=0
+            }
+        },1000)
+
+        setInterval(function(){
+            document.getElementById("s2").src=sli1[x]
+            x++
+            if(x == slides.length){
+                x=0
+            }
+        },2000)
+
+        setInterval(function(){
+            document.getElementById("s3").src=sli1[x]
+            x++
+            if(x == slides.length){
+                x=0
+            }
+        },3000)
+        
+    }
+
+    </script>
+</head>
+<body onload=slideshow()>
+
+    <!-- <h1></h1>
+    <div class="text">
+        CLOUDS
+    </div> -->
+
+    <div class="container">
+
+        
+        <span>
+            <img src="" class="slide" id="slide" alt="">
+        </span>
+        <span>
+            <img src="" class="sli" id="sli" alt="">
+        </span>
+        <span>
+            <img src="" class="slid" id="slid" alt="">
+        </span>
+        
+        <span>
+            <img src="" class="slide" id="s1" alt="">
+        </span>
+        <span>
+            <img src="" class="sli" id="s2" alt="">
+        </span>
+        <span>
+            <img src="" class="slid" id="s3" alt="">
+        </span>
+      
+    </div>
+    <p>Clouds are zero-effort photography</p>
+        
+        
+</body>
+</html>
