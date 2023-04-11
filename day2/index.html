@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+        </script>
+
+
+</head>
+<body>
+    <button class="open" onclick="openForm()">Open Form</button>
+
+    <div class="form-popup" id="myForm">
+        <form class="form-container">
+      
+          <label for="name"><b>First Name:</b></label>
+          <input type="text" placeholder="Enter your first name" required><br><br>
+
+          <label for="name"><b>Last Name:</b></label>
+          <input type="text" placeholder="Enter your last name" required><br><br>
+      
+          <label for="name"><b>City:</b></label>
+          <input type="text" placeholder="Enter your city name"><br><br>
+
+          <label for="name"><b>Age:</b></label>
+          <input type="number" placeholder="Enter your age" required><br><br>
+
+          <label for="name"><b>DOB:</b></label>
+          <input type="date" required><br><br>
+          
+          <h4 class="heading">Select the gender:</h4>
+          <div class="gender">
+            <input type="radio" name="identity" id="Gender1" value="Gender">
+            <label for="Gender">Female</label>
+            <input type="radio" name="identity" id="Gender2" value="Gender">
+            <label for="Gender">Male</label>
+          </div><br>
+
+          <h4 class="heading1">Select languages:</h4>
+            <div class="checkbox">
+                <input type="checkbox" name="knowledge" >
+                <label for="lan">C#</label>
+                <input type="checkbox" name="knowledge" >
+                <label for="lan">Java</label>
+                <input type="checkbox" name="knowledge" >
+                <label for="lan">python</label>
+                <input type="checkbox" name="knowledge" >
+                <label for="lan">Angular</label>
+                <input type="checkbox" name="knowledge" >
+                <label for="lan">Java Script</label>
+            </div>
+            <br>
+      
+          <button type="submit" class="btn">Submit</button><br>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+
+        </form>
+      </div>
+      
+</body>
+</html>
