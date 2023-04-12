@@ -8,32 +8,36 @@
 
     <script>
         function time(){
-            document.getElementById("timer").innerHTML="00"+hour+":"+mins+":"+sec
 
-            if (sec>59){
-                sec=0
-                min+=1
-            }
-            if (min>59){
-                min=0
-                hour+=1
-            }
+            hour=mins=sec=0
+            document.getElementById("timer").innerHTML="0"+hour+":"+mins+":"+sec;
 
+            setInterval(function()
+            {
+                sec+=1;
+                if (sec>59){
+                    sec=0;
+                    min+=1;
+                }
+                if (min>59){
+                    min=0;
+                    hour+=1;
+                }
 
+            },1000)
             
         }
     </script>
 </head>
-<body onload="timer()">
+
+<body onload="time()">
     <div class="cont">
         <span class="hours">Hours</span>
         <span class="mins">Minutes</span>
         <span class="secs">Seconds</span>
     </div>
 
-    <div id="timer">
-
-    </div>
+    <div id="timer"></div>
     
     
 </body>
