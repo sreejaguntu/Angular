@@ -1,0 +1,9 @@
+
+<app-app-header></app-app-header>
+<app-body></app-body>
+
+<div class="ourproduct">
+    <br><b class="heading">OUR PRODUCTS</b><br>
+    <app-product *ngFor="let x of services;let y=index" 
+    [title]="x" [description]="descriptions[y]"></app-product>
+</div>
