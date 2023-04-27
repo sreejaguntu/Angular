@@ -1,0 +1,15 @@
+<select [(ngModel)]="selected">
+    <option *ngFor="let x of types">{{x}}</option>
+</select>
+
+<mat-slider  class="slider" discrete min="0" max="2000">
+   
+    <input [(value)]="value1" matSliderStartThumb>
+    
+    <input [(value)]="value2" matSliderEndThumb>
+    
+</mat-slider>
+<div id="wrapper">
+    <app-products-box *ngFor="let x of productlist | typefilter:selected | rangepipe:value1:value2" [products]="x"></app-products-box>
+</div>
+

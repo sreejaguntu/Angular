@@ -1,0 +1,13 @@
+<div class="details">
+    <h1>{{products.name}}</h1>
+
+    <div class="image">
+        <img src="http://localhost/{{products.image}}" />
+    </div>
+    
+    <p>
+        {{products.description}}
+    </p>
+<div>
+<div *ngFor="let x of review | typefilter:selected" [reviews]="x"></div>
+<app-review-form ></app-review-form>
