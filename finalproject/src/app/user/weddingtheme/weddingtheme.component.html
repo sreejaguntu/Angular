@@ -1,0 +1,36 @@
+<mat-toolbar class="menu-bar">
+  <span class="title">LOVE AND KNOTS</span> 
+  <ul>
+    <li><a routerLink="/user">Home</a></li>
+    <li><a routerLink="/user/venues">Venues</a></li>
+    <li><a routerLink="/user/shop">Shop</a></li>
+    <li><a routerLink="/user/aboutus">About Us</a></li>
+    <li></li>
+  </ul>
+  <a routerLink=""><mat-icon class="icon">exit_to_app</mat-icon></a>
+</mat-toolbar>
+
+
+
+
+<div class="image">
+    <div class="heading">INDIAN WEDDING VENUES</div>
+</div>
+
+<div class="head">
+ <h1>WEDDING VENUES</h1>
+ <div class="search-container">
+    <form>
+      <input type="text" placeholder="Search.." name="search">
+      <button> <mat-icon>search</mat-icon></button>
+    </form>
+ </div>
+ <select [(ngModel)]="selected">
+    <option *ngFor="let x of city">{{x}}</option>
+ </select>
+</div>
+<div id="boxes">
+    <app-themebox *ngFor="let x of venueslist |cityfilter:selected" [venues]="x" ></app-themebox>
+   
+</div>
+

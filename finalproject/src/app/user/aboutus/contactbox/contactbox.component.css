@@ -1,0 +1,15 @@
+.contact-card {
+    width: 300px;
+    height: 330px;
+    margin-left:90px;
+    margin-top:20px;
+    float:left;
+    box-shadow: 5px 5px 5px gray;
+    background-color: rgb(239, 231, 246);
+}
+
+img{
+  width:300px;
+  height:200px;
+  
+}

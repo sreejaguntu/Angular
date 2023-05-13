@@ -1,0 +1,29 @@
+.box{
+    float: left;
+    width: 250px;
+    height: 400px;
+    box-sizing: border-box;    
+    margin-left: 45px;
+    padding: 10px;
+}
+
+.image{
+    height: 90%;
+    width: 100%;
+}
+
+.image img{
+    height: 100%;
+    width: 100%;
+}
+
+.text{
+    height: 10%;
+    text-align: center;
+
+    text-shadow: 3px 3px 3px gray;
+    color: rgb(56, 0, 0);
+    font-size: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}

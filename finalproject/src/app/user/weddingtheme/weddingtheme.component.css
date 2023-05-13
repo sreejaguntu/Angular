@@ -1,0 +1,150 @@
+.menu-bar{
+    background-color: rgb(239, 231, 246) !important;
+    color: rgb(62, 0, 0) ! important;
+}
+
+.menu-bar .title{
+    font-size: 30px;
+    margin-left: 70px;
+}
+
+ul{
+    margin-left: 150px;
+}
+li {
+    float: left;
+    list-style-type: none;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+a {
+    color: rgb(53, 0, 0);
+    size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover{
+    color: rgb(135, 103, 103)
+}
+
+a:active {
+    color: rgb(241, 229, 200);
+}
+
+.menu-bar button{
+    margin-left: 10px;
+    width: 150px;
+    height: 30px;
+    background-color: rgb(177, 1, 1);
+    border: none;
+    color: beige;
+    border-radius: 5px;
+}
+
+.menu-bar button:hover{
+    cursor: pointer;
+    background-color: rgb(233, 128, 0);
+
+}
+
+
+.icon{
+    font-size: 25px;
+    margin-top: 5px;
+    margin-left: 150px;
+}
+
+
+
+#boxes{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.image{
+    width: 100%;
+    background-image: url("http://localhost/wedding.jpg");
+    background-repeat: no-repeat;
+    background-color: black;
+    opacity: 0.9;
+    height: 350px;
+    background-size: cover;
+
+}
+
+.heading{
+    font-size: 50px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 150px;
+    margin-left: 300px;
+    
+}
+select{
+    border: none;
+    background-color: rgb(239, 231, 246);
+    margin-top: 25px;
+    width: 100px;
+    height: 40px;
+    margin-left: 50px;
+
+}
+.head{
+    display: flex;
+}
+.head h1{
+    margin-top: 30px;
+    margin-left: 60px;
+}
+/* .head .search-container {
+    float: right;
+  } */
+  
+  .head input[type=text] {
+    padding: 6px;
+    margin-top: 30px;
+    font-size: 17px;
+    border: none;
+  }
+
+.search-container{
+    margin-left: 550px;
+}
+button{
+    padding: 1.5px;
+}
+  
+  .head .search-container button {
+    float: right;
+    margin-top: 30px;
+
+    background:  rgb(239, 231, 246);
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .head .search-container button:hover {
+    background: #ccc;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .head .search-container {
+      float: none;
+
+    }
+    .head a, .head input[type=text], .head .search-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .head input[type=text] {
+      border: 1px solid #ccc;  
+    }
+  }

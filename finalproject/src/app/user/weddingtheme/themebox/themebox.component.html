@@ -1,0 +1,22 @@
+<a routerLink="/user/details/{{venues.id}}">
+
+    <div class="box">
+
+        <div class="image">
+            <img src="http://localhost/{{venues.image}}">
+        </div>
+
+        <span class="matter">
+            <div class="text">
+                {{venues.name}}
+            </div>
+            <div class="place">
+                <mat-icon>room</mat-icon>
+                ({{venues.city}})
+            </div>
+            <div class="cost">
+                Cost(per plate): {{venues.costPerPlate | currency:"INR"}}
+            </div>
+        </span>
+    </div>
+</a>

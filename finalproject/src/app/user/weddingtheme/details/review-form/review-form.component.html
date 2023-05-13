@@ -1,0 +1,28 @@
+<h1>Customer Reviews</h1><app-review-box *ngFor="let x of review" [review]="x"></app-review-box>
+<br>
+
+<div id="form">
+    <h2>Post Your Review</h2>
+    <div style="overflow: hidden;">
+        <div class="formbox">
+            <h5>First Name</h5>
+            <input type="text" [(ngModel)]="fname">*
+        </div>
+        <div class="formbox">
+            <h5>Last Name</h5>
+            <input type="text" [(ngModel)]="lname">*
+        </div>
+
+        <div class="formbox">
+            <h5>Review</h5>
+            <textarea [(ngModel)]="review">Write your review</textarea>*
+        </div>
+    </div>
+    <div class="alert alert-info" *ngIf="errors.length>0">
+        <ul >
+            <li *ngFor="let x of errors">{{x}}</li>
+        </ul>
+    </div>
+    <div style="margin:30px;"><button class="btn btn-secondary" (click)="submit()">Post it!</button></div>
+</div>
+

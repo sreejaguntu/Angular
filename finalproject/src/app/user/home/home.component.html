@@ -1,0 +1,51 @@
+<mat-toolbar class="menu-bar">
+    <span class="title">LOVE AND KNOTS</span> 
+    <ul>
+      <li><a routerLink="/user">Home</a></li>
+      <li><a routerLink="/user/venues">Venues</a></li>
+      <li><a routerLink="/user/shop">Shop</a></li>
+      <li><a routerLink="/user/aboutus">About Us</a></li>
+      <li></li>
+    </ul>
+    <a routerLink=""><mat-icon class="icon">exit_to_app</mat-icon></a>
+</mat-toolbar>
+
+<div class="slideshow-container">
+  <div *ngFor="let image of images; let i = index" class="slide" [ngClass]="{active: i === 0}">
+    <img [src]="image" alt="Slide">
+  </div>
+</div>
+<div class="dots">
+  <span *ngFor="let image of images; let i = index" class="dot" [ngClass]="{active: i === 0}" (click)="currentSlide = i"></span>
+</div>
+
+
+<a routerLink ="/user/venues">
+
+    <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title-group>
+            <mat-card-title>Wedding Venues</mat-card-title>
+            <mat-card-subtitle>Wedding venues are locations where couples can hold their wedding ceremonies and receptions. These venues can range from traditional settings such as churches, synagogues, or mosques, to more non-traditional locations like beaches, parks, or vineyards.
+              There are a variety of wedding venues to choose from, depending on the couple's preferences, budget, and style. Some popular options include ballrooms, hotels, banquet halls, gardens, and mansions. Many wedding venues offer packages that include catering, decorations, and other services to make the planning process easier for the couple.</mat-card-subtitle>
+          </mat-card-title-group>
+          <img mat-card-sm-image src="http://localhost/wed1.jpg" >
+        </mat-card-header>
+    </mat-card>
+</a>
+
+<a routerLink ="/user/shop">
+
+    <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title-group>
+            <mat-card-title>Shop / Rent</mat-card-title>
+            <mat-card-subtitle>Shopping for wedding outfits involves purchasing an outfit that the bride, groom, bridesmaids, groomsmen, or other wedding attendees will wear. Wedding outfits can range from formal dresses and suits to more casual attire, depending on the wedding's style and theme.Renting wedding outfits is another option, particularly for those who do not want to spend a lot of money on an outfit that may only be worn once. Many rental shops offer wedding dresses, tuxedos, suits, and other formalwear for weddings. Renting wedding outfits can be a more affordable option, but it's important to make sure that the outfit fits well and is in good condition before renting it.</mat-card-subtitle>
+          </mat-card-title-group>
+          <img mat-card-sm-image src="http://localhost/wed3.jpg" >
+        </mat-card-header>
+    </mat-card>
+</a>
+
+
+<router-outlet></router-outlet>

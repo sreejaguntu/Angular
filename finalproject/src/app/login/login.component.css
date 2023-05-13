@@ -1,0 +1,127 @@
+/* .toolbar{
+    background-color: rgb(219, 188, 188) ;
+    text-align: center;
+}
+
+
+body{
+    width: 800px;
+    height: 500px;
+
+    display: flex;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+.image{
+    width: 500px;
+    background-image: url("http://localhost/wedding.jpg");
+    background-repeat: no-repeat;
+}
+
+.column1{
+    width: 300px;
+    height: 300px;
+
+    margin-top: 50px;
+    text-align: center;
+} */
+
+.toolbar {
+    background-color:rgb(219, 188, 188);
+    color: #450000;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 30px;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:aliceblue;
+  }
+  
+  .image {
+    width: 50%;
+    height: 100%;
+    background-image: url("http://localhost/wedding.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .column1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  mat-button-toggle-group {
+    margin-bottom: 20px;
+  }
+  
+  mat-card {
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  mat-card-content {
+    padding: 20px;
+  }
+  
+  input[type="email"],
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  

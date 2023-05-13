@@ -1,0 +1,17 @@
+.box{
+    float: left;
+    width: 250px;
+    height: 350px; 
+    background-color: blue; 
+
+}
+.image{
+    height: 100%;
+    width: 100%;
+}
+
+.image img{
+    height: 100%;
+    width: 100%;
+}
+

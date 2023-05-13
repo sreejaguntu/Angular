@@ -1,0 +1,126 @@
+.chat {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: scroll;
+  }
+  
+  .admin-message {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 5px 0;
+  }
+  
+  .admin-message .message-body {
+    background-color: #f1f0f0;
+    border-radius: 10px;
+    color: #000;
+    font-size: 14px;
+    padding: 8px 10px;
+    margin-left: 10px;
+    max-width: 70%;
+  }
+  
+  .user-message {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 5px 0;
+  }
+  
+  .user-message .message-body {
+    background-color:rgb(229, 209, 247);
+    border-radius: 10px;
+    color: #000000;
+    font-size: 14px;
+    padding: 8px 10px;
+    margin-right: 10px;
+    max-width: 70%;
+  }
+  
+  .send {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #f1f0f0;
+  }
+  
+  .send input {
+    flex: 1;
+    height: 30px;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .send button {
+    background-color: #51ff00;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    /* padding: 5px 15px; */
+    padding-top: 5px;
+    padding-left: 10px;
+    margin-left: 10px;
+  }
+  
+  .send button mat-icon {
+    font-size: 18px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+
+  .menu-bar{
+    background-color: rgb(219, 188, 188) !important;
+    color: rgb(62, 0, 0) ! important;
+}
+
+.menu-bar .title{
+    font-size: 30px;
+    margin-left: 70px;
+}
+
+ul{
+    margin-left: 50px;
+}
+li {
+    float: left;
+    list-style-type: none;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+a {
+    color: rgb(53, 0, 0);
+    size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover{
+    color: rgb(135, 103, 103)
+}
+
+a:active {
+    color: rgb(241, 229, 200);
+}
+
+.icon{
+    font-size: 25px;
+    margin-top: 5px;
+    margin-left: 550px;
+}

@@ -1,0 +1,30 @@
+<mat-toolbar class="menu-bar">
+    <span class="title">LOVE AND KNOTS</span> 
+    <ul>
+      <li><a routerLink="/user">Home</a></li>
+      <li><a routerLink="/user/venues">Venues</a></li>
+      <li><a routerLink="/user/shop">Shop</a></li>
+      <li><a routerLink="/user/aboutus">About Us</a></li>
+      <li></li>
+    </ul>
+    <a routerLink=""><mat-icon class="icon">exit_to_app</mat-icon></a>
+</mat-toolbar>
+
+<div class="details">
+    <div class="image">
+        <img src="http://localhost/{{venues.image}}" />
+        <mat-card class="card">
+            <mat-card-title-group>
+                <mat-card-title>{{venues.name}}</mat-card-title>
+                <mat-card-subtitle>
+                    <mat-icon>room</mat-icon>
+                    ({{venues.city}})
+                </mat-card-subtitle>
+            </mat-card-title-group>
+        </mat-card>
+    </div>
+   
+    <div class="review">
+        <app-review-form></app-review-form>
+    </div>
+<div>

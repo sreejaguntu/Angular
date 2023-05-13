@@ -1,0 +1,73 @@
+.menu-bar{
+    background-color: rgb(219, 188, 188) !important;
+    color: rgb(62, 0, 0) ! important;
+}
+
+.menu-bar .title{
+    font-size: 30px;
+    margin-left: 70px;
+}
+
+ul{
+    margin-left: 50px;
+}
+li {
+    float: left;
+    list-style-type: none;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+a {
+    color: rgb(53, 0, 0);
+    size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover{
+    color: rgb(135, 103, 103)
+}
+
+a:active {
+    color: rgb(241, 229, 200);
+}
+
+.menu-bar button{
+    margin-left: 10px;
+    width: 150px;
+    height: 30px;
+    background-color: rgb(177, 1, 1);
+    border: none;
+    color: beige;
+    border-radius: 5px;
+}
+
+.menu-bar button:hover{
+    cursor: pointer;
+    background-color: rgb(233, 128, 0);
+
+}
+
+.icon{
+    font-size: 25px;
+    margin-top: 5px;
+    margin-left: 150px;
+}
+
+#boxes{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+
+.heading{
+    font-size: 50px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 150px;
+    margin-left: 300px;
+    
+}

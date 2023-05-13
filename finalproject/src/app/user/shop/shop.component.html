@@ -1,0 +1,45 @@
+<mat-toolbar class="menu-bar">
+    <span class="title">LOVE AND KNOTS</span> 
+    <ul>
+      <li><a routerLink="/user">Home</a></li>
+      <li><a routerLink="/user/venues">Venues</a></li>
+      <li><a routerLink="/user/shop">Shop</a></li>
+      <li><a routerLink="/user/aboutus">About Us</a></li>
+      <li></li>
+    </ul>
+    <a routerLink=""><mat-icon class="icon">exit_to_app</mat-icon></a>
+</mat-toolbar>
+
+<span><button class="chatbox" (click)="openDialog()"><mat-icon> chat_bubble</mat-icon></button></span>
+
+
+<div class="body">
+    <div class="function">
+        <h1>BROWSE BY FUNCTIONS</h1>
+        <div class="func-bg">
+            <app-functions *ngFor="let x of functionslist" [functions]="x">
+            
+            </app-functions>
+        </div>
+
+    </div>
+    <div class="type">
+        <h1>BROWSE BY TYPES</h1>
+            
+        <div class="product-scroll">
+            <app-types *ngFor="let x of typeslist" [types]="x" ></app-types>
+        </div>
+
+    </div>
+    <div class="trending">
+        <h1>TRENDING NOW</h1>
+        <div class="image-body">
+            <img src="http://localhost/wedding1.jpg">
+            <img src="http://localhost/wedding.jpg">
+            <img src="http://localhost/wedding1.jpg">
+            <img src="http://localhost/wedding.jpg">
+            <img src="http://localhost/wedding1.jpg">
+        </div>
+
+    </div>
+</div>

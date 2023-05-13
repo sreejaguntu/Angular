@@ -1,0 +1,30 @@
+<!-- <div class="chatbox">
+    <div class="messages">
+      
+    </div>
+    <input type="text" [(ngModel)]="newMessageText" placeholder="Type a message...">
+    <button type="submit">Send</button>
+
+  </div> -->
+
+<div class="chat">
+    <body>
+        <div *ngFor="let message of messages">
+            <div *ngIf="message.sender === 'admin'" class="admin-message">
+                <div class="message-body">{{message.message}}</div>
+            </div>
+            <div *ngIf="message.sender === 'user'" class="user-message">
+                <div class="message-body">{{message.message}}</div>
+            </div>
+        </div>
+    </body>
+    <div class="send">
+        <input type="text" [(ngModel)]="newMessage" (keyup.enter)="sendMessage(newMessage)" placeholder="Type your message...">
+        <button (click)="sendMessage(newMessage)"><mat-icon>send</mat-icon></button>
+    </div>
+</div>
+    
+
+  
+
+  

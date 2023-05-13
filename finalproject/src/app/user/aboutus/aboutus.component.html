@@ -1,0 +1,42 @@
+<mat-toolbar class="menu-bar">
+    <span class="title">LOVE AND KNOTS</span> 
+    <ul>
+      <li><a routerLink="/user">Home</a></li>
+      <li><a routerLink="/user/venues">Venues</a></li>
+      <li><a routerLink="/user/shop">Shop</a></li>
+      <li><a routerLink="/user/aboutus">About Us</a></li>
+      <li></li>
+    </ul>
+    <a routerLink=""><mat-icon class="icon">exit_to_app</mat-icon></a>
+</mat-toolbar>
+
+
+<div class="body">
+    <div class="image-box"></div>
+    <div class="middle">
+        <div class="small-image-box">
+            <img src="http://localhost/wedding.jpg">
+            <img src="http://localhost/wed1.jpg">
+            <img src="http://localhost/wed2.jpg">
+            <img src="http://localhost/wed3.jpg">
+        </div>
+    
+        <div class="about-matter">
+            <h1>WELCOME TO LOVE AND KNOTS!</h1>
+            <div class="matter">
+            <p>We specialize in creating beautifully tailored weddings for couples who want their special day to be a reflection of their unique love story. 
+            We are passionate about crafting unforgettable weddings that celebrate the love and commitment of our clients. From intimate elopements to grand celebrations, we work tirelessly to ensure that every detail is planned to perfection.
+            <br><br>
+            Our team of experienced wedding planners understands that every couple is different, and we pride ourselves on taking the time to get to know our clients and their vision for their wedding day.Our team brings a wealth of experience, creativity, and attention to detail to every wedding we plan.<br><br>
+            We believe that your wedding day should be a reflection of your love story, and our goal is to help you create a wedding that is unique, personalized, and unforgettable. Let us help you bring your wedding vision to life, and create a day that you and your loved ones will cherish for a lifetime.
+            </p>
+        </div>
+        <button class="faq" (click)="openDialog()" >FAQ's</button>
+    </div>
+    </div>
+    
+    <div class="contact">
+        <h1>OUR OFFICES</h1>
+        <app-contactbox *ngFor="let x of contactlist" [contacts]="x"></app-contactbox>
+    </div>
+</div>

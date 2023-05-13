@@ -1,0 +1,20 @@
+<mat-toolbar class="menu-bar">
+    <span class="title">LOVE AND KNOTS</span> 
+    <ul>
+      <li><a routerLink="/user">Home</a></li>
+      <li><a routerLink="/user/venues">Venues</a></li>
+      <li><a routerLink="/user/vendors">Vendors</a></li>
+      <li><a routerLink="/user/shop">Shop</a></li>
+      <li><a routerLink="/user/aboutus">About Us</a></li>
+      <li></li>
+    </ul>
+    <a routerLink=""><mat-icon class="icon">exit_to_app</mat-icon></a>
+</mat-toolbar>
+
+
+<div>
+    <h1>WEDDING VENDORS</h1>
+</div>
+<div id="boxes">
+    <app-destinations-box *ngFor="let x of destinationlist" [destinations]="x"></app-destinations-box>
+</div>
