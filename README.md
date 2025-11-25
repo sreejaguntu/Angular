@@ -42,4 +42,13 @@ A full-featured event planning web application that allows users to create, mana
 
 ---
 
-## Repository Structure
+## Learning Outcomes
+- Gained hands-on experience with Angular architecture and best practices
+- Learned to structure a project and maintain modular, reusable code
+- Applied Angular knowledge to build a real-world web application
+
+---
+
+## Project Report
+For detailed documentation of my learning and project, see the file:  
+[07-04-2023.docx](./07-04-2023.docx)
