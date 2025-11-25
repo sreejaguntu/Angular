@@ -50,5 +50,5 @@ A full-featured event planning web application that allows users to create, mana
 ---
 
 ## Project Report
-For detailed documentation of my learning and project, see the file:  
-[07-04-2023.docx](./07-04-2023.docx)
+For detailed documentation of my learning and project, see the folder:
+final project
